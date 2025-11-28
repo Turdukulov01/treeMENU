@@ -1,0 +1,6 @@
+{# menu/templates/menu/menu.html #}
+<ul class="menu menu-{{ menu_name }}">
+  {% for node in menu_tree %}
+    {% include "menu/menu_item.html" with node=node %}
+  {% endfor %}
+</ul>
